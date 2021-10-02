@@ -1,0 +1,130 @@
+.app-container {
+    display: block;
+    width: 100%;
+    height: fit-content;
+}
+
+.app-container_main {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.app-container_skeleton {
+    max-width: 500px;
+    max-height: 500px;
+    min-width: 60px;
+    min-height: 60px;
+    margin: 0 3% 0 3%;
+}
+
+.app-container_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.app-container_description {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0 3% 0 3%;
+    background: -webkit-linear-gradient(225deg, rgb(116, 11, 11, 0.7) 25%, rgb(64, 21, 88, 0.7) 23%, rgb(156, 0, 0, 0.7));
+    background: -moz-linear-gradient(225deg, rgb(116, 11, 11, 0.7) 25%, rgb(64, 21, 88, 0.7) 23%, rgb(156, 0, 0, 0.7));
+    background: linear-gradient(225deg, rgb(116, 11, 11, 0.7) 25%, rgb(64, 21, 88, 0.7) 23%, rgba(156, 0, 0, 0.7));
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+
+.app-container_info {
+    border-radius: 12px;
+    width: 30%;
+    margin: auto;
+    color: rgb(232, 233, 213);
+    max-height: 100%;
+    margin: auto;
+}
+
+.app-container_info-text {
+    color: rgb(232, 233, 213);
+    font-size: 24px;
+}
+
+.app-container_info-title {
+    color: rgb(232, 233, 213);
+    font-size: 26px;
+}
+
+.app-container_info-subtext {
+    color: rgb(232, 233, 213);
+    font-size: 20px;
+    opacity: .6;
+    margin: 5% 2% 5% 2%;
+}
+
+.app-container_preview {
+    border-radius: 2px;
+    margin-right: 2%;
+    min-width: 200px;
+    min-height: 150px;
+    margin: 2% 2% 2% auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .app-container_info-text {
+        font-size: 16px;
+    }
+    .app-container_info {
+        margin: auto 2% auto 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .app-container_info-subtext {
+        font-size: 8px;
+    }
+    .app-container_info-title {
+        font-size: 16px;
+    }
+    .app-container_info-text {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app-container_info-subtext {
+        font-size: 4px;
+    }
+    .app-container_info-title {
+        font-size: 10px;
+    }
+    .app-container_info-text {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app-container_description {
+        flex-direction: column;
+    }
+    .app-container_info {
+        width: 90%;
+        margin: 5% 5% 5% 5%;
+    }
+    .app-container_info-subtext {
+        font-size: 12px;
+    }
+    .app-container_info-title {
+        font-size: 16px;
+    }
+    .app-container_info-text {
+        font-size: 14px;
+    }
+    .app-container_preview {
+        margin: 0 5% 5% 5%;
+        width: 90%;
+    }
+}

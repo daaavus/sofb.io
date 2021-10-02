@@ -1,0 +1,81 @@
+.mint-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint-button {
+    margin-top: 14px;
+    transition: 0.35s;
+    cursor: pointer;
+    background-color: #a7aee1;
+    font-size: 24px;
+    color: rgb(232, 233, 213);
+    border: 0;
+    border-radius: 4px;
+    width: 50%;
+    min-width: 80px;
+    min-height: 20px;
+}
+
+.mint-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+    transition: 0.35s;
+}
+
+.mint-input {
+    margin-top: 40px;
+    cursor: pointer;
+    width: 50%;
+    min-width: 80px;
+    min-height: 30px;
+}
+
+.mint-title {
+    font-size: 32px;
+    color: rgb(232, 233, 213);
+}
+
+.mint-quantity {
+    opacity: .7;
+    margin-top: 40px;
+    color: rgb(232, 233, 213);
+    font-size: 16px;
+}
+
+.mint-description:hover {
+    margin-top: 40px;
+    color: rgb(232, 233, 213);
+}
+
+@media screen and (max-width: 800px) {
+    .mint-title {
+        font-size: 16px;
+    }
+    .mint-button {
+        font-size: 12px;
+    }
+    .mint-quantity {
+        font-size: 10px;
+        margin-top: 20px;
+    }
+    .mint-input {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mint-quantity {
+        font-size: 6px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mint-button {
+        font-size: 10px;
+        margin-top: 0;
+    }
+    .mint-input {
+        min-width: 80px;
+        margin-top: 0;
+    }
+}

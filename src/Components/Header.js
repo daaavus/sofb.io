@@ -1,10 +1,15 @@
 import React from "react";
+import './Header.css';
+import HeaderLogo from '../Images/logo.png'
 
 function Header() {
     return (
-        <div className="App">
-            <h1>SOFB</h1>
-            <h2>Coming soon...</h2>
+        <div className="header">
+            <p className="header-title">SKELETONS OF FORGOTTEN BLOCKCHAIN</p>
+            <img className="header-logo" src={HeaderLogo} />
+            <div className="header-metamask">
+                <p className="header-metamask_title">Connect with Metamask</p>
+            </div>
         </div>
     );
 }
